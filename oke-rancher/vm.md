@@ -48,8 +48,15 @@ Congratulations! you now have created a Virtual Network + Subnet.
 Let's continue to the second step.
 
 <image> 
-  
+ 
 Step 2: 
+
+## Add rules to security list ## 
+ 
+ 
+Step 3: 
+
+## Create a virtual machine and install Rancher ##
 
 Open the side menu, and go to Compute.
 
