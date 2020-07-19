@@ -77,26 +77,24 @@ Let's start.
 
 1. On your Rancher click on the "Add Cluster" 
 
-<image>
-  
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part2/rancher-add-cluster.PNG)
+
 2. Choose OKE Driver
 
-<image>
-  
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part2/Choose-OKE.PNG)  
   
 3. Name the cluster "rancher-oke"
 
-<image> 
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part2/rancher-oke-cluster.PNG) 
 
 4. Under Region: select your cloud region. 
 If you look on OCI Console should be on the upper part.
 Select the same in the Rancher cluster configuration screen. 
 
 
-<image> 
-  
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part2/region.PNG)  
 
-4. Now we are going to use Mobaxterm terminal, 
+5. Now we are going to use Mobaxterm terminal, 
 We need to create a Public/Private key for the API, 
 this is a different requirment than we did before.
 
@@ -165,24 +163,24 @@ Copy the whole key, and minimize the Mobaxterm window (we will need it later).
 5. Open OCI Console 
 Click on the top right corner on the profile,
 and then click on your account name. 
-<image>
-  
+
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part2/user-account.PNG)
+
 On the left corner, click on API Keys.
-<image>
 
 Click on Create API Key
 
-<image> 
+
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part2/api-keys.PNG)
  
 paste the content from your machine generated key.
 
-<image> 
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part2/add-pub-key.PNG)
 
 You will notice that a fingerprint is created. 
 copy the full fingerprint. 
 
-<image> 
-
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part2/fingerprint.PNG)
 
 6. Go to the Rancher screen 
 put the fingerprint under "user fingerprint" 
@@ -190,9 +188,6 @@ put the fingerprint under "user fingerprint"
 7. Go back to OCI console screen, on the same page you have OCID.
 Copy your user OCID and paste in the Rancher screen under
 "User OCID"
-
-<image> 
-<image> 
 
 8. Open again your Mobaxterm 
 run the following command: 
@@ -203,22 +198,24 @@ copy it fully, without spaces.
 and paste it in the Rancher window under
 "User Private Key"
 
-<image>
- 
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part2/keys-cluster.PNG)
+
+
 9. Go to OCI Console 
 click on the user profile icon
 and select your tenancy
+
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part2/Tenancy.PNG)
+
 copy the Tenancy OCID and paste it into the Rancher cluster configuration screen.
 "Tenancy OCID"
 
-<image>
-
-
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part2/copy-tenancy.PNG)
 
 10. Last parameters step, go again to OCI Console 
 Scroll down the left menu, click on identity. 
 
-<image> 
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part2/compartments.PNG)
 
 and then on compartments, choose your compartment. 
 copy the OCID of your compartment to Rancher cluster configuration screen.
@@ -244,15 +241,27 @@ but this is not a must, only if you want to connect to one of the nodes.
 
 Final result
 
-<image> 
-  
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part2/all-params.PNG)
+
 Finally you can click on "Create" 
 
-<image> 
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part2/create-cluster-final.PNG)
 
 If you done all the steps correctly and accurately, 
 the cluster should be created, and congratulations! 
+
+We can see that the cluster is Active: 
+
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part2/Cluster-Active.PNG)
+
+and from OCI:
+Go to the left menu > Developer Services > OKE > Choose the cluster youu and see the following screen: 
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part2/cluster-Active-OCI.PNG)
+
 We finished part 2. 
+
+
+
 
 Continue to part 3 [Install Wordpress app from Rancher catalog and manage it](https://github.com/deton57/oke-labs/blob/master/oke-rancher/wp.md) 
 
