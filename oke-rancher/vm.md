@@ -199,7 +199,7 @@ if you got this output, you rock!
 We just finished creating our Rancher,
 let's continue to our next step. 
 
-Click here to go to step 2: 
+Click here to go to part 2: 
 
 [Create an OKE cluster using Rancher](cluster.md) 
 
