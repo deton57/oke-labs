@@ -142,7 +142,7 @@ in putty you can use other steps (not written here)
 
 1. Click Session
 2. SSH
-3. in the remote host enter your instance public IP from where you saved it. 
+3. in the remote host enter your instance **Public IP** from where you saved it. 
 4. specify username: opc 
 5. Click on Advanced SSH Settings 
 6. Check the use private key and load it from your directory. 
