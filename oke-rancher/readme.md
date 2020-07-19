@@ -14,5 +14,5 @@ Lab steps:
 
 1. [Create a virtual machine with Rancher installed on Docker](vm.md) 
 2. [Create an OKE cluster using Rancher](cluster.md)
-3. [Install Wordpress app from Rancher catalog and manage it].(wp.md)
+3. [Install Wordpress app from Rancher catalog and manage it](wp.md)
 4. [Monitoring the cluster and the app](mon.md)
