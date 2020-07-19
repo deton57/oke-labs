@@ -15,8 +15,8 @@ Our goals will be to get familiar with
 Sign in page: https://www.oracle.com/cloud/sign-in.html
 If you don't have a cloud account,
 
-you can create a free accout trial here: 
-https://bit.ly/ocicredits
+**you can create a free accout trial here:** 
+**https://bit.ly/ocicredits**
 
 **If you have signed for a zoominar,
 you can enjoy a $500 promotion and no credit card required** 
