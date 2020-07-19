@@ -14,15 +14,15 @@ Step 1:
 After you are connected to your cloud account, 
 you will see the following dashboard screen.
 
-<image> 
-  
+
 Open the side menu, and go to Networking.
 
-<image> 
-  
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/menu-networking.PNG)
+    
+
 Click on Virtual Cloud Networks.
 
-<image> 
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/create-vcn.PNG)
   
 Click on Create VCN button.
 
@@ -33,9 +33,12 @@ example: "10.0.0.0/16"
 * Make sure it's not overlapping with other subnets you have 
 4. Click on Create VCN button on the buttom.
 
-<image> 
-  
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/create-vcn2.PNG)  
+
 Now click on the Create Subnet button.
+
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/create-subnet.PNG)
+
 1. Enter the name: "dev-subnet"
 2. Leave the Regional option selected
 3. from the CIDR BLOCK choose a sub-network from the choosen subnet previously. 
@@ -43,12 +46,10 @@ example: "10.0.0.0/24"
 4. Subnet access - must remain public (don't worry, we are just playing around). 
 5. Scroll buttom and click on Create Subnet button.
 
-<image> 
-  
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/create-subnet2.PNG)  
+
 Congratulations! you now have created a Virtual Network + Subnet.
 Let's continue to the second step.
-
-<image> 
  
 Step 2: 
 
@@ -56,18 +57,15 @@ Step 2:
 
 Open the side menu, and go to Networking.
 
-<image> 
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/menu-networking.PNG)
   
 Go to Virtual Cloud Networks. 
 
 Choose your Virtual Cloud Network, you created previously. 
-
-<image> 
   
-
 Now navigate to Security Lists.
 
-<image>
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/security-list.PNG)
 
 Click on the default security list. 
 
@@ -80,13 +78,11 @@ so we can access the web page of Rancher.
 2. DESTINATION PORT RANGE: "443" 
 3. Click on Add Ingress Rule button.
 
-<image> 
-  
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/security-list2.PNG)
 
 We finished step 2, now we have access to port 443. 
 
-<image> 
-
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/security-list-result.PNG)  
   
  
 Step 3: 
