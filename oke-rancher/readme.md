@@ -1,6 +1,6 @@
 ## Welcome to OKE - Rancher lab ##
 
-<img src="https://github.com/deton57/oke-labs/blob/master/oke-rancher/0_d-0uNMB9fzibtSjG.png" width="500" height="250"/>
+<img src="https://github.com/deton57/oke-labs/blob/master/oke-rancher/0_d-0uNMB9fzibtSjG.png" width="500" height="300"/>
 <img src="https://github.com/deton57/oke-labs/blob/master/oke-rancher/Rancher-Logo-Final-1.png" width="500" height="250">
 
 Our goal will be to get familiar with Kubernetes solution on Oracle cloud,
