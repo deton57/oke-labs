@@ -11,14 +11,16 @@ and Rancher, as an open source tool that can manage the Kubernetes.
 Sign in page: https://www.oracle.com/cloud/sign-in.html
 If you don't have a cloud account, you can create a free trial here: 
 <URL>
-**This steps apply only if you are using your current OCI Account, and you are not under root compartment**
-please make sure you have permissions for: 
+  
+```diff 
+- These steps apply only if you are using your current OCI Account, and you are not under root compartment
+- please make sure you have permissions for:
 
-1a. Creating Virtual Cloud Network and Subnets.
-1b. Creating Compute Instance + Shapes + Images permission.
-1c. Creating OKE Cluster with all the permissions. 
-1d. Make sure your OKE has permissions to create Networks and Storage.
-
+- 1a. Creating Virtual Cloud Network and Subnets.
+- 1b. Creating Compute Instance + Shapes + Images permission.
+- 1c. Creating OKE Cluster with all the permissions. 
+- 1d. Make sure your OKE has permissions to create Networks and Storage.
+```
 2. Mobaxterm installed 
 3. Putty + Puttygen installed 
 
