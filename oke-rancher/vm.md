@@ -205,9 +205,13 @@ Once you are connected you should see the following output:
 In order to create the Rancher on Docker, 
 run the following command:
 
-``sudo docker run -d --restart=unless-stopped \
+``sudo 
+   docker run -d --restart=unless-stopped \
   -p 80:80 -p 443:443 \
   rancher/rancher:latest``
+  
+**if the command is not running well** go here:
+https://rancher.com/docs/rancher/v2.x/en/installation/other-installation-methods/single-node-docker/#option-a-default-rancher-generated-self-signed-certificate
 
 Let's wait 1~2 minutes until the docker images are downloaded and the docker is up. 
 
