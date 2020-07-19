@@ -35,9 +35,12 @@ example: "10.0.0.0/16"
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/create-vcn2.PNG)  
 
+Done. your VCN is created.
+
+
 Now click on the Create Subnet button.
 
-![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/create-subnet.PNG)
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/create-subnet2.PNG)  
 
 1. Enter the name: "dev-subnet"
 2. Leave the Regional option selected
@@ -46,7 +49,6 @@ example: "10.0.0.0/24"
 4. Subnet access - must remain public (don't worry, we are just playing around). 
 5. Scroll buttom and click on Create Subnet button.
 
-![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/create-subnet2.PNG)  
 
 Congratulations! you now have created a Virtual Network + Subnet.
 Let's continue to the second step.
