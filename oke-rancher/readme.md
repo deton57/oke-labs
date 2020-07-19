@@ -29,7 +29,9 @@ If you don't have a cloud account, you can create a free trial here:
 
 
 2. Mobaxterm installed 
+    [Mobaxterm Download link](https://mobaxterm.mobatek.net/download.html)
 3. Putty + Puttygen installed 
+    [Putty Download Link](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 
 
 
