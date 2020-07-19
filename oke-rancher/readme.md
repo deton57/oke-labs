@@ -48,7 +48,7 @@ you can enjoy a $500 promotion and no credit card required**
 
 
 
-## Lab steps: ## 
+## Lab parts: ## 
 
 First thing we will do is prepare a virtual machine with Oracle Developer image,
 and prepare our cloud, so we can connect to the machine and launch a Rancher Docker.
