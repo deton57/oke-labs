@@ -56,7 +56,7 @@ Let's continue to the second step.
  
 Step 2: 
 
-## Add rules to security list ## 
+## Add rules to security list + Internet Gateway ## 
 
 Open the side menu, and go to Networking.
 
@@ -85,8 +85,32 @@ so we can access the web page of Rancher.
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/security-list-result.PNG)  
 
+
+Now we are going to create an Internet Gateway, 
+So traffic can be routed through the Internet. 
+
+1. On your network side menu go to Internet Gateway
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/internet-gateway.PNG)
+
+2. Click on the button "Create Internet Gateway"
+
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/internet-gateway2.PNG)
+
+3. Now go to route table, so we can route the traffic to the Internet Gateway.
+
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/internet-gateway3.PNG)
+
+4. Click on the default route table
+
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/internet-gateway4.PNG)
+
+5. Add the following route to the Internet gateway:
+
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/internet-gateway5.PNG)
+
+Now traffic is routed to the Internet,
+and we have access to port 443. 
 We finished step 2!
-now we have access to port 443. 
 
 
 Step 3: 
