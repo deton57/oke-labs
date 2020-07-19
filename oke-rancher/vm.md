@@ -147,7 +147,7 @@ in putty you can use other steps (not written here)
 5. Click on Advanced SSH Settings 
 6. Check the use private key and load it from your directory. 
 
-<image> 
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/session-moba.PNG)
   
 If you have succesfully followed the previous steps,
 you can connect to the machine from the left side panel, by clicking twice on the machine name.
