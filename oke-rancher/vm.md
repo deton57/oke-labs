@@ -82,23 +82,24 @@ so we can access the web page of Rancher.
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/security-list2.PNG)
 
-We finished step 2, now we have access to port 443. 
-
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/security-list-result.PNG)  
-  
- 
+
+We finished step 2!
+now we have access to port 443. 
+
+
 Step 3: 
 
 ## Create a virtual machine and install Rancher ##
 
 Open the side menu, and go to Compute.
 
-<image> 
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/menu-compute.PNG)  
   
 Click on the Create Instance button.
 
-<image> 
-  
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/create-instance1.PNG)
+
 1. Enter the name: "dev-oke-rancher"
 2. Choose your compartment name.
 3. Click on Change image, then Oracle images, look for Oracle 
@@ -107,12 +108,17 @@ Scroll down and check the checkbox:
 I have reviewed and accept the Oracle Standard Terms and Restrictions.
 Click on Select Image. 
 4.* Note you are going to create a shape with 1 OCPU (Intel) + 15Gb RAM.
+
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/create-instance1.PNG)
+
+
 5. Choose your Virtual Cloud Network you created before.
 6. Choose your subnet you created before. 
 7. Make sure that ASSIGN A PUBLIC IP ADDRESS is checked.
 
-<image> 
-  
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/create-instance2.PNG)
+
+
 8. Scroll down to Add SSH Keys. 
 
 Here it's a bit tricky, but we will do it together. 
@@ -121,14 +127,14 @@ Here it's a bit tricky, but we will do it together.
 *****************
 Add steps
 
-<image> 
-  
+ 
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/create-instance3.PNG)
+ 
 9. Click on Create 
 10. Let's wait 1~2 minutes until the Instance is provisioned, 
 copy the public IP address and put it in a notepad.
 
-<image> 
-  
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/public-ip.PNG)  
   
 Now it's time to connect and install Rancher.
 Because you have selected the Oracle Developer Cloud Image,
