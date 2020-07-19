@@ -22,6 +22,7 @@ https://bit.ly/ocicredits
 you can enjoy a $500 promotion and no credit card required** 
 
 ```diff 
+**Existing Accounts** 
 - These steps apply only if you are using your current OCI Account, and you are not under root compartment
 - please make sure you have permissions for:
 
