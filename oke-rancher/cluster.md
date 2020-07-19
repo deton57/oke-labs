@@ -39,4 +39,38 @@ On the next screen click on the button
 And you're in, you can see the Rancher dashboard! 
 
 
+## Activate the OKE Driver ##
+
+The OKE Driver, allows Rancher to work with OCI-OKE API
+and to create and manage the cluster on Oracle.
+
+1. Click on tools menu and select Drivers:
+
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/Rancher-Drivers.PNG)
+
+2. Activate the OKE Driver
+
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/rancher-OKE-driver.PNG)
+
+Wait a few seconds, once it's Active. 
+We are almost ready. 
+
+## Creating the cluster ## 
+
+Now we are a step away from creating the cluster,
+And here it will be a bit challanging, 
+because we will need to prepare Rancher,
+to work with our OCI Account.
+
+We have one step to do, before staring.
+We need to create an API key in our OCI Account. 
+
+I suggest to open 3 screens 2 of Web Browser and 1 screen of Mobaxterm
+
+1. OCI Console Account
+2. On the second one Rancher
+3. Mobaxterm terminal 
+
+
+
 
