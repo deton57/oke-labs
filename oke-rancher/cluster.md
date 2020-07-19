@@ -6,7 +6,7 @@ we are going to create the OKE cluster using the Rancher we created.
 If you have completed the previous part successfully, you should be able to open 
 the Rancher from your web browser. entering: 
 
-https://<public-ip>:433
+https://{{public-ip}}:433
   
 The public IP should be saved in a notepad.
 **IF you don't remember, follow these steps**
@@ -18,5 +18,5 @@ The public IP should be saved in a notepad.
 
 
 In your browser, go to: 
-https://<public-ip>:433
+https://{{public-ip}}:433
   
