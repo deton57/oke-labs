@@ -3,9 +3,10 @@
 <img src="https://github.com/deton57/oke-labs/blob/master/oke-rancher/0_d-0uNMB9fzibtSjG.png" width="500" height="300"/>
 <img src="https://github.com/deton57/oke-labs/blob/master/oke-rancher/Rancher-Logo-Final-1.png" width="500" height="250">
 
-Our goal will be to get familiar with Kubernetes solution on Oracle cloud,
-and Rancher, as an open source tool that can manage the Kubernetes. 
-
+Our goals will be to get familiar with 
+1. Cloud native solutions on Oracle cloud (OKE),
+2. Managing the Kubernetes cluster using Rancher
+3. Simplifying Deployments and monitoring using Rancher. 
 
 ## Before you begin, here are some prerequisite: ##
 
