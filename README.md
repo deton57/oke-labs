@@ -1,5 +1,3 @@
-# oke-rancher-lab
+# OKE Labs
 
-Hello and welcome the OKE Rancher lab. 
-
-step 1: upload the following image to object storage. 
+Hello and welcome to OKE Labs.
