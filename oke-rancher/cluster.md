@@ -36,5 +36,7 @@ and click continue.
 On the next screen click on the button
 "Save URL"
 
-And your in, you can see the Rancher dashboard! 
+And you're in, you can see the Rancher dashboard! 
+
+
 
