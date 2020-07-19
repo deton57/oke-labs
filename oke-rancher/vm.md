@@ -153,6 +153,7 @@ If you have succesfully followed the previous steps,
 you can connect to the machine from the left side panel, by clicking twice on the machine name.
 
 Once you are connected you should see the following output:
+
 [opc@dev-machine ~]$
 
 In order to create the Rancher on Docker, 
