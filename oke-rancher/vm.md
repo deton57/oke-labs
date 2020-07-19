@@ -124,10 +124,67 @@ Here it's a bit tricky, but we will do it together.
 Add steps
 
 <image> 
+  
 9. Click on Create 
+10. Let's wait 1~2 minutes until the Instance is provisioned, 
+copy the public IP address and put it in a notepad.
 
 <image> 
   
+  
+Now it's time to connect and install Rancher.
+Because you have selected the Oracle Developer Cloud Image,
+you don't need to install docker or any other tools for now.
+
+Open your mobaxterm or other terminal. 
+I will put here the steps for Mobaxterm, 
+in putty you can use other steps (not written here)
+
+1. Click Session
+2. SSH
+3. in the remote host enter your instance public IP from where you saved it. 
+4. specify username: opc 
+5. Click on Advanced SSH Settings 
+6. Check the use private key and load it from your directory. 
+
+<image> 
+  
+If you have succesfully followed the previous steps,
+you can connect to the machine from the left side panel, by clicking twice on the machine name.
+
+Once you are connected you should see the following output:
+[opc@dev-machine ~]$
+
+In order to create the Rancher on Docker, 
+run the following command:
+
+``sudo docker run -d --restart=unless-stopped \
+  -p 80:80 -p 443:443 \
+  rancher/rancher:latest``
+
+Let's wait 1~2 minutes until the docker images are downloaded and the docker is up. 
+
+run the following command: 
+
+``sudo docker ps``
+
+You should see something like this: 
+
+90c3ff917b57        rancher/rancher:latest   "entrypoint.sh"     2 hours ago         Up 2 hours          0.0.0.0:80->80/tcp, 0.0.0.0:443->443/tcp   focused_beaver
+
+if you got this output, you rock! 
+We just finished creating our Rancher,
+let's continue to our next step. 
+
+Click here to go to step 2: 
+[Create an OKE cluster using Rancher](cluster.md) 
+
+
+If you want to return to the lab homepage, click here:
+[Back to the general lab section](readme.md)
+
+
+
 
   
  
