@@ -36,7 +36,7 @@ If you don't have a cloud account, you can create a free trial here:
 
 
 
-Lab steps: 
+## Lab steps: ## 
 
 First thing we will do is prepare a virtual machine with Oracle Developer image,
 and prepare our cloud, so we can connect to the machine and launch a Rancher Docker.
