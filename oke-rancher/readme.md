@@ -26,12 +26,13 @@ If you don't have a cloud account, you can create a free trial here:
 - 1d. Make sure your OKE has permissions to create Networks and Storage.
 
 - Links for policy permissions:
-- [Link for Common policies](https://docs.cloud.oracle.com/en-us/iaas/Content/Identity/Concepts/commonpolicies.htm)
-
-- [Link for OKE Policies](https://docs.cloud.oracle.com/en-us/iaas/Content/ContEng/Concepts/contengpolicyconfig.htm)
 ```
+[Link for Common policies](https://docs.cloud.oracle.com/en-us/iaas/Content/Identity/Concepts/commonpolicies.htm)
 
-
+[Link for OKE Policies](https://docs.cloud.oracle.com/en-us/iaas/Content/ContEng/Concepts/contengpolicyconfig.htm)
+```diff
+- Please update them before we begin the lab.
+```
 
 2. Mobaxterm installed 
     [Mobaxterm Download link](https://mobaxterm.mobatek.net/download.html)
