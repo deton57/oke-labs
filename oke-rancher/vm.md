@@ -1,3 +1,4 @@
+## Welcome to part 1 - Creating the Rancher## 
 This will be the first step in our lab.
 Our task is to create a virtual machine, 
 with everything we need in order to create a Kubernetes cluster. 
