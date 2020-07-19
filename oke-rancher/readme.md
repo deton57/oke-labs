@@ -1,4 +1,6 @@
-Welcome to OKE - Rancher lab.
+## Welcome to OKE - Rancher lab ##
+
+![oke](https://i2.wp.com/www.dbform.com/wp-content/uploads/2019/11/k8s-oracle-617x400.png?resize=350%2C200&ssl=1)
 
 Our goal will be to get familiar with Kubernetes solution on Oracle cloud,
 and Rancher, as an open source tool that can manage the Kubernetes. 
