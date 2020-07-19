@@ -9,6 +9,7 @@ In this section we will focus on 3 steps we need to create.
 
 
 Step 1: 
+
 ## Create a Virtual Cloud Network + Subnet ## 
 After you are connected to your cloud account, 
 you will see the following dashboard screen.
@@ -52,7 +53,41 @@ Let's continue to the second step.
 Step 2: 
 
 ## Add rules to security list ## 
- 
+
+Open the side menu, and go to Networking.
+
+<image> 
+  
+Go to Virtual Cloud Networks. 
+
+Choose your Virtual Cloud Network, you created previously. 
+
+<image> 
+  
+
+Now navigate to Security Lists.
+
+<image>
+
+Click on the default security list. 
+
+Click on Add Ingress Rule. 
+
+Now we are going to add HTTPS access to our network, 
+so we can access the web page of Rancher. 
+
+1. Source CIDR input: "0.0.0.0/0" (I know it's not secured, never recommend you to do it. but it's for lab purpose)
+2. DESTINATION PORT RANGE: "443" 
+3. Click on Add Ingress Rule button.
+
+<image> 
+  
+
+We finished step 2, now we have access to port 443. 
+
+<image> 
+
+  
  
 Step 3: 
 
