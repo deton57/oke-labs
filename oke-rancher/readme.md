@@ -4,10 +4,25 @@ Our goal will be to get familiar with Kubernetes solution on Oracle cloud,
 and Rancher, as an open source tool that can manage the Kubernetes. 
 
 
-prerequisite - before you being make sure you have Oracle OCI account.
+prerequisite - 
+
+
+1. before you being make sure you have Oracle OCI account.
 Sign in page: https://www.oracle.com/cloud/sign-in.html
 If you don't have a cloud account, you can create a free trial here: 
 <URL>
+
+2. Mobaxterm installed 
+
+3. Putty + Puttygen installed 
+
+4. If you are using your current OCI Account, and you are not under root compartment,
+please make sure you have permissions for: 
+
+1. Creating Virtual Cloud Network and Subnets.
+2. Creating Compute Instance + Shapes + Images permission.
+3. Creating OKE Cluster with all the permissions. 
+4. Make sure your OKE has permissions to create Networks and Storage. 
 
 
 Lab steps: 
