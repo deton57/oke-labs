@@ -13,6 +13,6 @@ If you don't have a cloud account, you can create a free trial here:
 Lab steps: 
 
 1. [Create a virtual machine with Rancher installed on Docker](vm.md) 
-2. Create an OKE cluster using Rancher
-3. Install Wordpress app from Rancher catalog and manage it
-4. Monitoring the cluster and the app 
+2. [Create an OKE cluster using Rancher](cluster.md)
+3. [Install Wordpress app from Rancher catalog and manage it].(wp.md)
+4. [Monitoring the cluster and the app](mon.md)
