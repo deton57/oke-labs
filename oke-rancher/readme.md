@@ -1,7 +1,7 @@
 ## Welcome to OKE - Rancher lab ##
 
-<img src="https://i2.wp.com/www.dbform.com/wp-content/uploads/2019/11/k8s-oracle-617x400.png" width="250" height="250"/>
-<img src="(https://i1.wp.com/www.docker.com/blog/wp-content/uploads/Rancher-Logo-Final-1.png?fit=600%2C300&ssl=1" width="250" height="250">
+<img src="https://github.com/deton57/oke-labs/blob/master/oke-rancher/0_d-0uNMB9fzibtSjG.png" width="500" height="250"/>
+<img src="https://github.com/deton57/oke-labs/blob/master/oke-rancher/Rancher-Logo-Final-1.png" width="500" height="250">
 
 Our goal will be to get familiar with Kubernetes solution on Oracle cloud,
 and Rancher, as an open source tool that can manage the Kubernetes. 
