@@ -105,9 +105,12 @@ Click on the Create Instance button.
 3. Click on Change image, then Oracle images, look for Oracle 
 "Oracle Cloud Developer Image"	
 Scroll down and check the checkbox:
+
 I have reviewed and accept the Oracle Standard Terms and Restrictions.
+
 Click on Select Image. 
-4.* Note you are going to create a shape with 1 OCPU (Intel) + 15Gb RAM.
+
+4.**Note you are going to create a shape with 1 OCPU (Intel) + 15Gb RAM.**
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/create-instance1.PNG)
 
