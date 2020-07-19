@@ -18,8 +18,14 @@ If you don't have a cloud account, you can create a free trial here:
 
 - 1a. Creating Virtual Cloud Network and Subnets.
 - 1b. Creating Compute Instance + Shapes + Images permission.
-- 1c. Creating OKE Cluster with all the permissions. 
+- 1c. Creating OKE Cluster with all the permissions.
 - 1d. Make sure your OKE has permissions to create Networks and Storage.
+
+Links for policy permissions:
+Common: 
+https://docs.cloud.oracle.com/en-us/iaas/Content/Identity/Concepts/commonpolicies.htm
+OKE:
+https://docs.cloud.oracle.com/en-us/iaas/Content/ContEng/Concepts/contengpolicyconfig.htm
 ```
 2. Mobaxterm installed 
 3. Putty + Puttygen installed 
