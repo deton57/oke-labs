@@ -124,12 +124,26 @@ Click on Select Image.
 
 8. Scroll down to Add SSH Keys. 
 
-Here it's a bit tricky, but we will do it together. 
+Here it's a bit tricky, 
+but we will do it together. 
 
-*****************
-*****************
-Add steps
+1. Open putty keygen
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/putty-keygen1.PNG)
 
+2. click on generate button. 
+and move your mouse a few times on the screen so a key will be generated. 
+
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/putty-keygen2.PNG)
+
+3. **Important** Save the private key on your PC (click save private key)
+
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/putty-keygen3.PNG)
+
+4. Save your public key content on your PC (copy the public key content from the screen and save it to notepad)
+
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/putty-keygen4.PNG)
+
+Now, once we finshed, we can paste the public key into the SSH-KEY in OCI: 
  
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/create-instance3.PNG)
  
