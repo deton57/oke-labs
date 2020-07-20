@@ -11,11 +11,11 @@ Our goals will be to get familiar with
 ## Before you begin, here are some prerequisite: ##
 
 
-1. before you being make sure you have Oracle OCI account.
+1. First, make sure you have an Oracle OCI account.
 Sign in page: https://www.oracle.com/cloud/sign-in.html
-If you don't have a cloud account,
+If you don't have a cloud account yet,
 
-**you can create a free accout trial here:** 
+**you can create a free account trial here:** 
 **https://bit.ly/ocicredits**
 
 **If you have signed for a zoominar,
