@@ -1,4 +1,4 @@
-## Welcome to part 2 ##
+## Welcome to part 2 - Installing the OKE cluster using Rancher ##
 
 In this part of the lab,
 we are going to create the OKE cluster using the Rancher we created.
