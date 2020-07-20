@@ -17,3 +17,39 @@ Let's start by creating a new project.
 Click on the "Add Project" button. 
 
 ![image]()
+
+Name it "wordpress", and click on the "Create" button.
+
+![image]()
+
+Now let's access the project from the top menu. 
+
+![image]()
+
+Next, navigate to "Apps" from the top menu.
+
+![image]()
+
+and click on "Launch" on the left side of the screen.
+
+Rancher has a rich app catalog, that can be easily deployed on your Kubernetes cluster.
+let's search for "wordpress" using the search bar on the right corner. 
+
+![image]()
+
+Once you've found it, let's click on it. 
+
+![image]() 
+
+In the following deployment you have 3 placeholders for password input,
+let's input a password: **WPRancher321!** (you can use your own/auto-generated) 
+
+![image]()
+
+Scroll down, and click on the "Launch" button. 
+This will take a few moments..
+
+
+
+
+
