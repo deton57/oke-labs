@@ -3,6 +3,9 @@
 In this part of the lab,
 we are going to create the OKE cluster using the Rancher we created.
 
+The cluster will be created on nodes. each node represents a virtual machine.
+If you're account is subscribed to a region with 3 AD's, this means you will have 3 virtual machines created. 
+
 If you have completed the previous part successfully, you should be able to open 
 the Rancher from your web browser. entering: 
 
