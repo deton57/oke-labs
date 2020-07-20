@@ -8,7 +8,7 @@ let's get started.
 
 First thing we are going to do is to access our created cluster. 
 
-![image]()
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part3/Access-Cluster.PNG)
 
 Now we see that we have different projects and namespaces on our system,
 they are default as this is a new cluster and nothing is created. 
@@ -18,37 +18,37 @@ they are default as this is a new cluster and nothing is created.
 Let's start by creating a new project. 
 Click on the "Add Project" button. 
 
-![image]()
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part3/Projects%20and%20namespaces.PNG)
 
 Name it "wordpress", and click on the "Create" button.
 
-![image]()
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part3/project-creation.PNG)
 
 Now let's access the project from the top menu. 
 
-![image]()
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part3/access-project.PNG)
 
 ## Creating your first app ##
 
 Next, navigate to "Apps" from the top menu.
 
-![image]()
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part3/apps.PNG)
 
 and click on "Launch" on the left side of the screen.
 
 Rancher has a rich app catalog, that can be easily deployed on your Kubernetes cluster.
 let's search for "wordpress" using the search bar on the right corner. 
 
-![image]()
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part3/app-catalog.PNG)
 
 Once you've found it, let's click on it. 
 
-![image]() 
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part3/wordpress.PNG) 
 
 In the following deployment you have 3 placeholders for password input,
 let's input a password: **WPRancher321!** (you can use your own/auto-generated) 
 
-![image]()
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part3/passwords.PNG)
 
 Scroll down, and click on the "Launch" button. 
 This will take a few moments..
@@ -56,22 +56,20 @@ This will take a few moments..
 Congratulations!
 you have deployed your first app on Rancher (in this lab, of course)
 
-![image]()
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part3/ready-deployment.PNG)
 
 Let's play around and see some features that Rancher offer us. 
 First, let's click on the deployment on the word "wordpress". 
-
-![image]()
 
 In the next screen you will see endpoints you can access,
 this is a website you have deployed by a few clicks. 
 you can click on one of the endpoints to access your website:
 
-![image]()
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part3/endpoints.PNG)
 
 And this is your Wordpress website:
 
-![image]()
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part3/wordpress-website.PNG)
 
 The IP address you see, is a provisioned Load Balancer,
 Kubernetes can provision a Load Balancer per each service/ingress. 
@@ -87,17 +85,17 @@ Let's view the deployment on the OCI OKE side now.
 Open OCI Console 
 Go to the left menu > Developer Services > Container Cluster OKE
 
-![image]()
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part3/oke-oci.PNG)
 
 Click on your OKE cluster
 
-![image]()
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part3/click-on-oke.PNG)
 
 On the top menu click on the Cloud Shell icon,
 wait a few moments while it opens. meanwhile at the same time, click on the "Access Cluster" button.
 
 
-![image]()
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part3/access-cluster-cloudshell.PNG)
 
 The OCI Cloud Shell is a great tool, it gives you a cloud terminal window,
 where it has all the tools you need to manage and deploy on your cloud.
@@ -107,7 +105,7 @@ and access it.
 
 When the Cloud Shell comes up, copy and paste the command:
 
-![image]() 
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part3/copy-paste-cloud-shell.PNG) 
 
 If you did it correctly, you should get the following response:
 ```Existing Kubeconfig file found at /home/account/.kube/config and new config merged into it```
@@ -165,18 +163,18 @@ Let's check our cloud account to see if it's actually created.
 
 Go to the left menu, click on Networking > Load Balancers
 
-![image]()
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part3/load-balancers.PNG)
 
 I can see that a Load Balancer have been created. 
 
-![image]()
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part3/Load-Balancer-created.PNG)
 
 Let's access it. 
 Click on the Load Balancer name.
 
 In the next screen click on the left bottom menu on Backend Sets
 
-![image]()
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part3/lb-backend.PNG)
 
 We can see that it has 2 backend sets, 
 and they act as our Wordpress endpoints. 
