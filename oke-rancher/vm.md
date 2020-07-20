@@ -16,7 +16,7 @@ After you are connected to your cloud account,
 you will see the following dashboard screen.
 
 
-Open the side menu, and go to Networking.
+Open the side menu and go to Networking.
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/menu-networking.PNG)
     
@@ -32,7 +32,7 @@ Click on Create VCN button.
 3. CIDR BLOCK - you can choose every private subnet you with. 
 example: "10.0.0.0/16"
 * Make sure it's not overlapping with other subnets you have 
-4. Click on Create VCN button on the buttom.
+4. Click on Create VCN button on the bottom.
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/create-vcn2.PNG)  
 
@@ -45,10 +45,10 @@ Now click on the Create Subnet button.
 
 1. Enter the name: "dev-subnet"
 2. Leave the Regional option selected
-3. from the CIDR BLOCK choose a sub-network from the choosen subnet previously. 
+3. from the CIDR BLOCK choose a sub-network from the chosen subnet previously. 
 example: "10.0.0.0/24" 
 4. Subnet access - must remain public (don't worry, we are just playing around). 
-5. Scroll buttom and click on Create Subnet button.
+5. Scroll bottom and click on Create Subnet button.
 
 
 Congratulations! you now have created a Virtual Network + Subnet.
@@ -58,7 +58,7 @@ Step 2:
 
 ## Add rules to security list + Internet Gateway ## 
 
-Open the side menu, and go to Networking.
+Open the side menu and go to Networking.
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/menu-networking.PNG)
   
@@ -75,9 +75,9 @@ Click on the default security list.
 Click on Add Ingress Rule. 
 
 Now we are going to add HTTPS access to our network, 
-so we can access the web page of Rancher. 
+so, we can access the web page of Rancher. 
 
-1. Source CIDR input: "0.0.0.0/0" (I know it's not secured, never recommend you to do it. but it's for lab purpose)
+1. Source CIDR input: "0.0.0.0/0" (I know it's not secured, never recommend you do it. but it's for lab purpose)
 2. DESTINATION PORT RANGE: "443" 
 3. Click on Add Ingress Rule button.
 
@@ -87,7 +87,7 @@ so we can access the web page of Rancher.
 
 
 Now we are going to create an Internet Gateway, 
-So traffic can be routed through the Internet. 
+So, traffic can be routed through the Internet. 
 
 1. On your network side menu go to Internet Gateway
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/internet-gateway.PNG)
@@ -117,7 +117,7 @@ Step 3:
 
 ## Create a virtual machine and install Rancher ##
 
-Open the side menu, and go to Compute.
+Open the side menu and go to Compute.
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/menu-compute.PNG)  
   
@@ -168,7 +168,7 @@ and move your mouse a few times on the screen so a key will be generated.
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/putty-keygen4.PNG)
 
-Now, once we finshed, we can paste the public key into the SSH-KEY in OCI: 
+Now, once we finished, we can paste the public key into the SSH-KEY in OCI: 
  
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/create-instance3.PNG)
  
@@ -182,7 +182,7 @@ Now it's time to connect and install Rancher.
 Because you have selected the Oracle Developer Cloud Image,
 you don't need to install docker or any other tools for now.
 
-Open your mobaxterm or other terminal. 
+Open your mobaxterm or another terminal. 
 I will put here the steps for Mobaxterm, 
 in putty you can use other steps (not written here)
 
@@ -195,7 +195,7 @@ in putty you can use other steps (not written here)
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/session-moba.PNG)
   
-If you have succesfully followed the previous steps,
+If you have successfully followed the previous steps,
 you can connect to the machine from the left side panel, by clicking twice on the machine name.
 
 Once you are connected you should see the following output:
