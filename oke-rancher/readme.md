@@ -11,9 +11,13 @@ Our goals will be to get familiar with:
 
 <details><summary><b>If you aren't familiar with the mentioned solutions, you can read some documentation here:</b></summary>
 <p>
+  
 Oracle IaaS - OCI: https://docs.cloud.oracle.com/en-us/iaas/Content/home.htm
+
 Oracle OKE - https://docs.cloud.oracle.com/en-us/iaas/Content/ContEng/Concepts/contengoverview.htm
+
 Rancher - https://rancher.com/docs/
+
 </p></details>
 
 ## Before you begin, here are some prerequisite: ##
