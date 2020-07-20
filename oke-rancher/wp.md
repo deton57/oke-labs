@@ -13,6 +13,8 @@ First thing we are going to do is to access our created cluster.
 Now we see that we have different projects and namespaces on our system,
 they are default as this is a new cluster and nothing is created. 
 
+## Creating a project ##
+
 Let's start by creating a new project. 
 Click on the "Add Project" button. 
 
@@ -25,6 +27,8 @@ Name it "wordpress", and click on the "Create" button.
 Now let's access the project from the top menu. 
 
 ![image]()
+
+## Creating your first app ##
 
 Next, navigate to "Apps" from the top menu.
 
@@ -48,6 +52,7 @@ let's input a password: **WPRancher321!** (you can use your own/auto-generated)
 
 Scroll down, and click on the "Launch" button. 
 This will take a few moments..
+
 
 
 
