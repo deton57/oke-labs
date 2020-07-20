@@ -53,6 +53,30 @@ let's input a password: **WPRancher321!** (you can use your own/auto-generated)
 Scroll down, and click on the "Launch" button. 
 This will take a few moments..
 
+Congratulations!
+you have deployed your first app on Rancher (in this lab, of course)
+
+![image]()
+
+Let's play around and see some features that Rancher offer us. 
+First, let's click on the deployment on the word "wordpress". 
+
+![image]()
+
+## Discovering Rancher features ## 
+
+In the next screen you will see endpoints you can access,
+this is a website you have deployed by a few clicks. 
+you can click on one of the endpoints to access your website:
+
+![image]()
+
+And this is your Wordpress website:
+
+![image]()
+
+The IP address you see, is a provisioned Load Balancer,
+Kubernetes can provision a Load Balancer per each service/ingress. 
 
 
 
