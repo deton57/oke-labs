@@ -28,7 +28,7 @@ click on Advanced, and then click on the proceed link below:
 
 In the next screen, you can set a password, 
 in this lab I use: OKERancher123!
-but you are not limited and you can set your own password.
+but you are not limited, and you can set your own password.
 After you set the password, check the checkbox that "Agree to the Terms"
 and click continue.
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/rancher-login.PNG)
@@ -58,14 +58,14 @@ We are almost ready.
 ## Creating the cluster ## 
 
 Now we are a step away from creating the cluster,
-And here it will be a bit challanging, 
+And here it will be a bit challenging, 
 because we will need to prepare Rancher,
 to work with our OCI Account.
 
 We have one step to do, before staring.
 We need to create an API key in our OCI Account. 
 
-I suggest to open 3 screens 2 of Web Browser and 1 screen of Mobaxterm
+I suggest opening 3 screens 2 of Web Browser and 1 screen of Mobaxterm
 
 * OCI Console Account
 * On the second one Rancher
@@ -96,13 +96,13 @@ Select the same in the Rancher cluster configuration screen.
 
 5. Now we are going to use Mobaxterm terminal, 
 We need to create a Public/Private key for the API, 
-this is a different requirment than we did before.
+this is a different requirement than we did before.
 
 you can open it and connect to your dev machine. 
 command line/saved session
 ssh opc@{{public-ip}} -i private.key 
 
-Once your'e in, run the following commands: 
+Once you're in, run the following commands: 
 
 opc@dev-machine-87165 ~]$ 
 ```ssh-keygen -t rsa -b 4096 -m PEM -f $HOME/id_rsa```
@@ -158,7 +158,7 @@ smPokzabZ0RQp+spak0p+IFYDW9kdhWqxBC2pI2ZPni5tP/h4yoRyeE0X1J4ewAr
 -----END PUBLIC KEY----- 
 ``` 
 
-Copy the whole key, and minimize the Mobaxterm window (we will need it later). 
+Copy the whole key and minimize the Mobaxterm window (we will need it later). 
 
 5. Open OCI Console 
 Click on the top right corner on the profile,
@@ -243,7 +243,7 @@ Final result
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part2/all-params.PNG)
 
-Finally you can click on "Create" 
+Finally, you can click on "Create" 
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part2/create-cluster-final.PNG)
 
@@ -255,11 +255,12 @@ We can see that the cluster is Active:
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part2/Cluster-Active.PNG)
 
 and from OCI:
-Go to the left menu > Developer Services > OKE > Choose the cluster youu and see the following screen: 
+Go to the left menu > Developer Services > OKE > Choose the cluster you created,
+and check the following details: 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part2/cluster-Active-OCI.PNG)
 
-We finished part 2. 
-
+We finished part 2, 
+good job!
 
 
 
