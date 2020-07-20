@@ -3,13 +3,13 @@
 <img src="https://github.com/deton57/oke-labs/blob/master/oke-rancher/0_d-0uNMB9fzibtSjG.png" width="500" height="300"/>
 <img src="https://github.com/deton57/oke-labs/blob/master/oke-rancher/Rancher-Logo-Final-1.png" width="500" height="250">
 
-Our goals will be to get familiar with: 
+Our goal is to get familiar with the following: 
 1. Oracle IaaS - OCI (Oracle Cloud Infrastructure)
 2. Oracle Cloud Native Solutions - OKE (Oracle Kubernetes Engine) 
 3. Managing the Kubernetes Engine Cluster using Rancher
 4. Simplifying Deployments and monitoring them using Rancher 
 
-<details><summary><b>If you aren't familiar with the mentioned solutions, you can read some documentation here:</b></summary>
+<details><summary><b>If you are not familiar with the mentioned solutions yet, you can find some documentation here:</b></summary>
 <p>
   
 Oracle IaaS - OCI: https://docs.cloud.oracle.com/en-us/iaas/Content/home.htm
@@ -25,8 +25,8 @@ Rancher - https://rancher.com/docs/
 
 1. First, make sure you have an Oracle OCI account.
 Sign in page: https://www.oracle.com/cloud/sign-in.html
-If you don't have a cloud account yet,
 
+**If you don't have a cloud account yet,**
 **you can create a free account trial here:** 
 **https://bit.ly/ocicredits**
 
@@ -60,24 +60,24 @@ you can enjoy a $500 promotion and no credit card required**
 
 
 
-## Lab parts: ## 
+## Lab Agenda: ## 
 
-First thing we will do is prepare a virtual machine with Oracle Developer image,
-and prepare our cloud, so we can connect to the machine and launch a Rancher Docker.
+First, we shall create a virtual machine with Oracle Developer image,
+connect it to Oracle cloud, and launch a Rancher Docker:
 
 1. [Create a virtual machine with Rancher installed on Docker](vm.md) 
 
-After we have a Rancher installed, 
-we will create an OKE cluster on cloud. 
+Once Rancher is installed, 
+we shall create an OKE cluster on Oracle cloud:
 
 2. [Create an OKE cluster using Rancher](cluster.md)
 
 We have a cluster up and running with nodes, 
-now it's time to install apps on the cluster. 
+now it is time to install apps on the cluster:
 
 3. [Install Wordpress app from Rancher catalog and manage it](wp.md)
 
-Our apps are up and running, let's monitor the Kubernetes cluster, 
-and see the workloads. 
+Our apps are up and running, 
+let's monitor the Kubernetes cluster, and see the workloads:
 
 4. [Monitoring the cluster and the app](mon.md)
