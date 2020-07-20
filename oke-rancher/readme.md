@@ -3,10 +3,11 @@
 <img src="https://github.com/deton57/oke-labs/blob/master/oke-rancher/0_d-0uNMB9fzibtSjG.png" width="500" height="300"/>
 <img src="https://github.com/deton57/oke-labs/blob/master/oke-rancher/Rancher-Logo-Final-1.png" width="500" height="250">
 
-Our goals will be to get familiar with 
-1. Cloud native solutions on Oracle cloud (OKE),
-2. Managing the Kubernetes cluster using Rancher
-3. Simplifying Deployments and monitoring using Rancher. 
+Our goals will be to get familiar with: 
+1. Oracle IaaS - OCI (Oracle Cloud Infrastructure)
+2. Oracle Cloud Native Solutions - OKE (Oracle Kubernetes Engine) 
+3. Managing the Kubernetes Engine Cluster using Rancher
+4. Simplifying Deployments and monitoring them using Rancher 
 
 ## Before you begin, here are some prerequisite: ##
 
