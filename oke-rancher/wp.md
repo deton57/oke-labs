@@ -63,8 +63,6 @@ First, let's click on the deployment on the word "wordpress".
 
 ![image]()
 
-## Discovering Rancher features ## 
-
 In the next screen you will see endpoints you can access,
 this is a website you have deployed by a few clicks. 
 you can click on one of the endpoints to access your website:
@@ -77,6 +75,117 @@ And this is your Wordpress website:
 
 The IP address you see, is a provisioned Load Balancer,
 Kubernetes can provision a Load Balancer per each service/ingress. 
+
+The big advantage of Rancher is that it manages all the different Kubernetes resources,
+in an easy way. Per the deployment, you can see all the Kubernetes resources such as:
+Volumes, Secrets, Configmaps, Ingresses, Services and everything you need. 
+
+## Check the deployment from OCI and OKE ##
+
+Let's view the deployment on the OCI OKE side now. 
+
+Open OCI Console 
+Go to the left menu > Developer Services > Container Cluster OKE
+
+![image]()
+
+Click on your OKE cluster
+
+![image]()
+
+On the top menu click on the Cloud Shell icon,
+wait a few moments while it opens. meanwhile at the same time, click on the "Access Cluster" button.
+
+
+![image]()
+
+The OCI Cloud Shell is a great tool, it gives you a cloud terminal window,
+where it has all the tools you need to manage and deploy on your cloud.
+
+The tools we need now is OCI CLI and Kubectl commands, in order to create the kubeconfig file
+and access it. 
+
+When the Cloud Shell comes up, copy and paste the command:
+
+![image]() 
+
+If you did it correctly, you should get the following response:
+```Existing Kubeconfig file found at /home/account/.kube/config and new config merged into it```
+
+Now, from your Cloud Shell, run the following command:
+
+```kubectl get ns```
+
+This will retrieve a list of all the created namespaces on your OKE cluster.
+
+```
+NAME              STATUS   AGE
+cattle-system     Active   11h
+default           Active   11h
+kube-node-lease   Active   11h
+kube-public       Active   11h
+kube-system       Active   11h
+wordpress         Active   20m
+```
+
+You can see that the wordpress namespace have been created. 
+I did this part of the lab a bit later, so ignore the time differences. 
+
+Now let's verify that we have all what we created from Rancher, by running the following command:
+
+```kubectl get all -n wordpress```
+
+the output should be like in the example:
+
+```
+NAME                             READY   STATUS    RESTARTS   AGE
+pod/wordpress-6bcf994cbd-np5nj   1/1     Running   0          21m
+pod/wordpress-mariadb-0          1/1     Running   0          21m
+
+
+NAME                        TYPE           CLUSTER-IP      EXTERNAL-IP       PORT(S)                      AGE
+service/wordpress           LoadBalancer   10.96.191.212   158.101.180.218   80:31638/TCP,443:30243/TCP   21m
+service/wordpress-mariadb   ClusterIP      10.96.105.44    <none>            3306/TCP                     21m
+
+
+NAME                        READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/wordpress   1/1     1            1           21m
+
+NAME                                   DESIRED   CURRENT   READY   AGE
+replicaset.apps/wordpress-6bcf994cbd   1         1         1       21m
+
+NAME                                 READY   AGE
+statefulset.apps/wordpress-mariadb   1/1     21m
+```
+
+Note as I mentioned before - you have a Loadbalancer created, with External-IP.
+This is the power of running Kubernetes on the Cloud, cause it can provision different resources. 
+Let's check our cloud account to see if it's actually created. 
+
+
+Go to the left menu, click on Networking > Load Balancers
+
+![image]()
+
+I can see that a Load Balancer have been created. 
+
+![image]()
+
+Let's access it. 
+Click on the Load Balancer name.
+
+In the next screen click on the left bottom menu on Backend Sets
+
+![image]()
+
+We can see that it has 2 backend sets, 
+and they act as our Wordpress endpoints. 
+
+Congratulations! 
+We have done with part 3. 
+
+It's time to continue to our final part for this intro lab. 
+
 
 
 
