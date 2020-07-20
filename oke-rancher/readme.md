@@ -66,6 +66,7 @@ now it's time to install apps on the cluster.
 
 3. [Install Wordpress app from Rancher catalog and manage it](wp.md)
 
-Our apps are up and running, let's monitor them. 
+Our apps are up and running, let's monitor the Kubernetes cluster, 
+and see the workloads. 
 
 4. [Monitoring the cluster and the app](mon.md)
