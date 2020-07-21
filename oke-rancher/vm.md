@@ -1,22 +1,23 @@
 ## Welcome to part 1 - Creating the Rancher ## 
-This will be the first step in our lab.
-Our task is to create a virtual machine, 
-with everything we need in order to create a Kubernetes cluster. 
+The first step in our lab is creating the Rancher.
+Our mission is to create a Virtual machine and set it up everything we need to create a Kubernetes cluster.
 
-In this section we will focus on 3 steps we need to create.
-1. Virtual Cloud Network + Subnet for the virtual machine 
-2. Add HTTPS/443 rule to the security list, in order to connect to Rancher. 
-3. Virtual machine with Oracle Developer image, in order to create a Docker.  
+In this section we will focus on the following 3 steps:
+1.	Create Virtual Cloud Network and Subnet for the virtual machine
+2.	Add HTTPS/443 rule to the security list, in order to connect to Rancher
+3.	Create Virtual machine with Oracle Cloud Developer image, in order to create a Docker
 
 
 Step 1: 
 
-## Create a Virtual Cloud Network + Subnet ## 
-After you are connected to your cloud account, 
-you will see the following dashboard screen.
+## Create Virtual Cloud Network and Subnet ## 
+
+Once connected to your cloud account,
+you will see the dashboard screen.
 
 
-Open the side menu and go to Networking.
+Open the side menu and go to Networking:
+
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/menu-networking.PNG)
     
@@ -25,14 +26,15 @@ Click on Virtual Cloud Networks.
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/create-vcn.PNG)
   
-Click on Create VCN button.
+Click on Create VCN button,
+and enter the following values:
 
-1. Enter the name: "oke-rancher-lab"
-2. Choose your compartment name.
-3. CIDR BLOCK - you can choose every private subnet you with. 
-example: "10.0.0.0/16"
-* Make sure it's not overlapping with other subnets you have 
-4. Click on Create VCN button on the bottom.
+1.	Name: "oke-rancher-lab"
+2.	Compartment name: select your compartment name
+3.	CIDR BLOCK: you can select any private subnet you use. For example: "10.0.0.0/16"
+•	Comment: Make sure it's not overlapping with other subnets you have
+4.	Click on Create VCN button on the bottom
+
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/create-vcn2.PNG)  
 
@@ -43,30 +45,32 @@ Now click on the Create Subnet button.
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/create-subnet2.PNG)  
 
-1. Enter the name: "dev-subnet"
-2. Leave the Regional option selected
-3. from the CIDR BLOCK choose a sub-network from the chosen subnet previously. 
-example: "10.0.0.0/24" 
-4. Subnet access - must remain public (don't worry, we are just playing around). 
-5. Scroll bottom and click on Create Subnet button.
+
+Enter the following values:
+
+1.	Name: "dev-subnet"
+2.	Leave Regional option selected
+3.	From the CIDR BLOCK select a sub-network, which is the same as the subnet previously selected. For example: "10.0.0.0/24"
+4.	Subnet access - must remain public (do not worry, this is just a “sandbox”)
+5.	Scroll down and click on Create Subnet button
 
 
-Congratulations! you now have created a Virtual Network + Subnet.
-Let's continue to the second step.
+Congratulations! You have now created a Virtual Network plus Subnet.
+Let us continue to the second step.
  
 Step 2: 
 
-## Add rules to security list + Internet Gateway ## 
+## Add rules to Security list and add an Internet Gateway ## 
 
-Open the side menu and go to Networking.
+Open the side menu and go to Networking:
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/menu-networking.PNG)
   
 Go to Virtual Cloud Networks. 
 
-Choose your Virtual Cloud Network, you created previously. 
-  
-Now navigate to Security Lists.
+Select the Virtual Cloud Network created in the previous step.
+
+And now navigate to Security Lists.
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/security-list.PNG)
 
@@ -77,126 +81,135 @@ Click on Add Ingress Rule.
 Now we are going to add HTTPS access to our network, 
 so, we can access the web page of Rancher. 
 
-1. Source CIDR input: "0.0.0.0/0" (I know it's not secured, never recommend you do it. but it's for lab purpose)
-2. DESTINATION PORT RANGE: "443" 
-3. Click on Add Ingress Rule button.
+First we must add HTTPS access to our network, to let us access the Rancher web page:
+
+1.	Source CIDR input: "0.0.0.0/0" (comment: I know it is not secured, and I would never recommend you do that,  but just for lab we can do that)
+2.	DESTINATION PORT RANGE: "443"
+
+Now click on Add Ingress Rule button
+
+
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/security-list2.PNG)
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/security-list-result.PNG)  
 
 
-Now we are going to create an Internet Gateway, 
-So, traffic can be routed through the Internet. 
+Once the Ingress Rule is created, 
+we shall create an Internet Gateway, to enable routing traffic through the Internet.
 
-1. On your network side menu go to Internet Gateway
+1.	On your network side menu go to Internet Gateway:
+
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/internet-gateway.PNG)
 
-2. Click on the button "Create Internet Gateway"
+2. Click on Create Internet Gateway button:
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/internet-gateway2.PNG)
 
-3. Now go to route table, so we can route the traffic to the Internet Gateway.
+3. Go to Route Tables, to set the traffic route to the Internet Gateway:
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/internet-gateway3.PNG)
 
-4. Click on the default route table
+4. Click on the Default Route Table for oke-rancher-lab:
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/internet-gateway4.PNG)
 
-5. Add the following route to the Internet gateway:
+5. Add the following route to the Internet Gateway:
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/internet-gateway5.PNG)
 
-Now traffic is routed to the Internet,
+Now the traffic is routed to the Internet, 
 and we have access to port 443. 
-We finished step 2!
+We completed step 2!
 
 
 Step 3: 
 
 ## Create a virtual machine and install Rancher ##
 
-Open the side menu and go to Compute.
+Open the side menu and go to Compute:
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/menu-compute.PNG)  
   
-Click on the Create Instance button.
+Click on Create Instance button:
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/create-instance1.PNG)
 
-1. Enter the name: "dev-oke-rancher"
-2. Choose your compartment name.
-3. Click on Change image, then Oracle images, look for Oracle 
-"Oracle Cloud Developer Image"	
-Scroll down and check the checkbox:
-
+Enter the following values:
+1.	Name: "dev-oke-rancher"
+2.	Select your compartment name
+3.	Click on Change Image, then Oracle images, look for "Oracle Cloud Developer Image", scroll down and check the checkbox:
 I have reviewed and accept the Oracle Standard Terms and Restrictions.
+4.	Click on Select Image.
 
-Click on Select Image. 
 
-4.**Note you are going to create a shape with 1 OCPU (Intel) + 15Gb RAM.**
+4.**Note: you are going to create a shape with 1 OCPU (Intel) + 15Gb RAM..**
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/create-instance1.PNG)
 
 
-5. Choose your Virtual Cloud Network you created before.
-6. Choose your subnet you created before. 
-7. Make sure that ASSIGN A PUBLIC IP ADDRESS is checked.
+5.	Select the Virtual Cloud Network you created before
+6.	Select the subnet you created before
+7.	Make sure that ASSIGN A PUBLIC IP ADDRESS is checked
+
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/create-instance2.PNG)
 
 
-8. Scroll down to Add SSH Keys. 
+8.	Scroll down to Add SSH Keys
 
-Here it's a bit tricky, 
-but we will do it together. 
+Here it is a bit tricky, 
+but we will do it together.
+
 
 1. Open putty keygen
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/putty-keygen1.PNG)
 
-2. click on generate button. 
-and move your mouse a few times on the screen so a key will be generated. 
+2. click on Generate button and hoover your mouse a few times over the screen so a key is generated.
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/putty-keygen2.PNG)
 
-3. **Important** Save the private key on your PC (click save private key)
+3. **Important: ** Save the private key on your PC (click Save private key)
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/putty-keygen3.PNG)
 
-4. Save your public key content on your PC (copy the public key content from the screen and save it to notepad)
+4. Save your public key content on your PC 
+(copy the public key content from the screen and save it to Notepad)
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/putty-keygen4.PNG)
 
-Now, once we finished, we can paste the public key into the SSH-KEY in OCI: 
+Now, once it is copied, we can paste the public key into the SSH-KEY in OCI: 
  
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/create-instance3.PNG)
  
-9. Click on Create 
-10. Let's wait 1~2 minutes until the Instance is provisioned, 
-copy the public IP address and put it in a notepad.
+9.	Click on Create
+10.	Let us wait 1to 2 minutes until the Instance is provisioned.
+Now copy the public IP address and put it on a Notepad page.
+
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/public-ip.PNG)  
   
-Now it's time to connect and install Rancher.
-Because you have selected the Oracle Developer Cloud Image,
-you don't need to install docker or any other tools for now.
+As soon as this step is complete, 
+it is time to connect and install Rancher. 
+Since you have selected the Oracle Developer Cloud Image, 
+there is no need to install Docker or any other tools, for now.
 
-Open your mobaxterm or another terminal. 
-I will put here the steps for Mobaxterm, 
-in putty you can use other steps (not written here)
+Open your Mobaxterm or any other terminal. 
+For your convenience, please find below the steps for Mobaxterm 
+(in Putty you can use other steps):
 
 1. Click Session
 2. SSH
-3. in the remote host enter your instance **Public IP** from where you saved it. 
+3. In the remote host, copy the instance **Public IP** you saved before. 
 4. specify username: opc 
 5. Click on Advanced SSH Settings 
-6. Check the use private key and load it from your directory. 
+6. Check the Use private key and load it from your directory
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/session-moba.PNG)
   
-If you have successfully followed the previous steps,
-you can connect to the machine from the left side panel, by clicking twice on the machine name.
+If you have successfully completed the previous steps, 
+you can now connect to the machine from the left side panel, 
+by double-clicking on the machine name.
 
 Once you are connected you should see the following output:
 
@@ -204,6 +217,7 @@ Once you are connected you should see the following output:
 
 In order to create the Rancher on Docker, 
 run the following command:
+
 
 ``sudo 
    docker run -d --restart=unless-stopped \
@@ -213,19 +227,20 @@ run the following command:
 **if the command is not running well** go here:
 https://rancher.com/docs/rancher/v2.x/en/installation/other-installation-methods/single-node-docker/#option-a-default-rancher-generated-self-signed-certificate
 
-Let's wait 1~2 minutes until the docker images are downloaded and the docker is up. 
+Let us wait 1 to 2 minutes until the Docker images 
+are downloaded and the Docker is up and running.
 
 run the following command: 
 
 ``sudo docker ps``
 
-You should see something like this: 
+You should see something like the following:
 
 90c3ff917b57        rancher/rancher:latest   "entrypoint.sh"     2 hours ago         Up 2 hours          0.0.0.0:80->80/tcp, 0.0.0.0:443->443/tcp   focused_beaver
 
-if you got this output, you rock! 
-We just finished creating our Rancher,
-let's continue to our next step. 
+If you got this output, you rock! 
+We just finished creating our Rancher. 
+Let's continue to our next step.
 
 Click here to go to part 2: 
 
