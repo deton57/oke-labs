@@ -42,8 +42,7 @@ you can enjoy a $500 promotion and no credit card required**
 - 1b. Creating Compute Instance + Shapes + Images permission.
 - 1c. Creating OKE Cluster with all the permissions.
 - 1d. Make sure your OKE has permissions to create Networks and Storage.
-
-- <details><summary><b>Links for policy permissions:</b></summary>
+<details><summary><b>Links for policy permissions:</b></summary>
 <p>
 ```
   [Link for Common policies](https://docs.cloud.oracle.com/en-us/iaas/Content/Identity/Concepts/commonpolicies.htm)
