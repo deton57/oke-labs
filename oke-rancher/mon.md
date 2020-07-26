@@ -125,7 +125,69 @@ Now you will see that the load does not grow the in the same pace as before.
 
 ![image]() 
 
-8. Click on the Grafana icon: 
+8. Let's wait till the load test will finish running, 
+we should get the following output: 
+
+```
+This is ApacheBench, Version 2.3 <$Revision: 1430300 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 158.101.180.218 (be patient)
+Completed 1000 requests
+Completed 2000 requests
+Completed 3000 requests
+Completed 4000 requests
+Completed 5000 requests
+Completed 6000 requests
+Completed 7000 requests
+Completed 8000 requests
+Completed 9000 requests
+Completed 10000 requests
+Finished 10000 requests
+
+
+Server Software:        Apache/2.4.41
+Server Hostname:        158.101.180.218
+Server Port:            443
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES256-GCM-SHA384,2048,256
+
+Document Path:          /
+Document Length:        38007 bytes
+
+Concurrency Level:      100
+Time taken for tests:   244.423 seconds
+Complete requests:      10000
+Failed requests:        4801
+   (Connect: 0, Receive: 0, Length: 4801, Exceptions: 0)
+Write errors:           0
+Total transferred:      464375589 bytes
+HTML transferred:       461515589 bytes
+Requests per second:    40.91 [#/sec] (mean)
+Time per request:       2444.229 [ms] (mean)
+Time per request:       24.442 [ms] (mean, across all concurrent requests)
+Transfer rate:          1855.36 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        3   71 267.2      8    2844
+Processing:    51 2363 2991.6   1502   18941
+Waiting:       28 1275 1381.2    973    9070
+Total:         56 2435 3051.7   1566   18961
+
+Percentage of the requests served within a certain time (ms)
+  50%   1566
+  66%   2086
+  75%   2559
+  80%   3083
+  90%   6483
+  95%   9857
+  98%  13031
+  99%  14759
+ 100%  18961 (longest request)
+```
+
+9. Go to Rancher and click on the Grafana icon: 
 
 ![image]()
 
@@ -133,4 +195,35 @@ It will open a new tab of Grafana screen, click on the Home (Top left corner):
 
 ![image]() 
 
+Change it to Deployment.
+
+![image]() 
+
+Change the time on the top right corner to 30 minutes: 
+
+![image]() 
+
+Now you will see some metrics regarding the deployment, 
+hover over the metrics, to see what happened during the load test.
+
+10. Change the the dashboard to Nodes on the top left corner and the time to 30 minutes:
+
+![image]() 
+
+Now you will see some metrics regarding nodes, 
+hover over the metrics, to see what happened during the load test.
+
+10. Change the the dashboard to Pods on the top left corner and the time to 30 minutes:
+
+![image]() 
+
+Now you will see some metrics regarding pods, 
+hover over the metrics, to see what happened during the load test.
+
+
+Congratulations, you finished the lab. 
+Now you know how to deploy and operate a cluster from Rancher.
+You know how to monitor and scale the deployment. 
+
+Wait for some more advanced labs in the future.
 
