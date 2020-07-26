@@ -18,43 +18,44 @@ we need to enable the monitoring feature.
 
 ## Enabling the monitoring ## 
 
-1. Go to the global menu:
+1. Open Rancher dashboard, and go to the global menu:
 
-![image]()
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part4/global-rancher.PNG)
 
 2. Now click on your cluster name: 
 
-![image]()
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part4/rancher-cluster.PNG)
 
 3. Go to Tools > Monitoring:
 
-![image]()
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part4/monitoring-menu.PNG)
 
 4. Here you will have a menu, with some Prometheus and Grafana settings,
 let's scroll to the bottom of the page and click on "Enable":
 
-![image]()
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part4/Enable-monitoring-from-settings.PNG)
 
 It will take some time, while the Grafana and Prometheus are being deployed.
 
-Go to your project by clicking on the top left menu - 
+5. Go to your project by clicking on the top left menu - 
 cluster name, and in the dropdown menu click on the project name:
 
-![image]()
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part4/top-menu-project.PNG)
 
-Now go to Resources > Workloads:
+Now click on your cluster name: 
 
-![image]() 
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part4/rancher-cluster.PNG)
 
-You will know that the monitoring is not up yet, because we don't see a Grafana icon, and 
+7. You will know that the monitoring is not up yet, because we don't see a Grafana icon, and 
 we don't see the green bars: 
 
-![image]()
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part4/monitoring%20API%20not%20ready.PNG)
 
-If you wait a while, usually 2-5 minutes, 
-you will see the bars and the Grafana icon: 
+If you wait a while, usually 2-5 minutes, so let's wait and refresh the page.
 
-![image]()
+After it has been deployed, you will see the bars and the Grafana icon: 
+
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part4/monitoring-.PNG)
 
 Now monitoring is up! 
 
@@ -62,25 +63,29 @@ Now monitoring is up!
 
 Next we are going to run a load test. 
 
-1. Choose the Wordpress workload: 
+1. Now go to Resources > Workloads:
 
-![image]()
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part4/workloads-menu.PNG) 
+
+And choose the Wordpress workload:
+
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part4/select-workload.PNG)
 
 2. Leave 2 tabs open:
 1. Pods
 2. WorkLoads Metrics
 
-![image]()
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part4/open-tabs.PNG)
 
-2. You can scale out easily, some pods, by click on the + button above: 
+2. You can scale out easily, some pods, by click on the "+" button above: 
 
-![image]()
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part4/deployment-increase-pods.PNG)
 
 This will create additional pods, in order to split the load between them. 
 
 3. Under the Workloads Metrics, you can change the display time to 5 minutes. 
 
-![image]() 
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part4/change-time.PNG) 
 
 4. It's time to start the test. 
 For this you will need your Wordpress endpoint IP Address.
@@ -107,23 +112,23 @@ Completed 1000 requests
 
 5. Go back to Rancher and click on the refresh button, under workloads.
 
-![image]()
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part4/refresh.PNG)
 
 You should see now the load being generated: 
 
-![image]()
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part4/metrics-3-pods.PNG)
 
 6. It's time to scale some pods out, let's add another 3 pods, so we will have a total of 6: 
 
-![image]() 
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part4/6-pods.PNG) 
 
-7. Wait until all the poads, will finish initializing and refresh the workload again.
+7. Wait until all the pods, will finish initializing and refresh the workload again.
 
-![image]()
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part4/refresh.PNG)
 
 Now you will see that the load does not grow the in the same pace as before. 
 
-![image]() 
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part4/cpu-scale-after-6.PNG) 
 
 8. Let's wait till the load test will finish running, 
 we should get the following output: 
@@ -189,33 +194,37 @@ Percentage of the requests served within a certain time (ms)
 
 9. Go to Rancher and click on the Grafana icon: 
 
-![image]()
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part4/from-workloads-navigate-to-grafana.PNG)
 
-It will open a new tab of Grafana screen, click on the Home (Top left corner): 
+It will open a new tab of Grafana screen,
+We will need to change the dashboard screen.
+click on the Home dashboard (Top left corner): 
 
-![image]() 
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part4/home-grafana.PNG) 
 
 Change it to Deployment.
 
-![image]() 
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part4/deployment.PNG) 
 
+Change the namespace to Wordpress and 
 Change the time on the top right corner to 30 minutes: 
 
-![image]() 
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part4/grafana-deployment.PNG) 
 
 Now you will see some metrics regarding the deployment, 
 hover over the metrics, to see what happened during the load test.
 
 10. Change the the dashboard to Nodes on the top left corner and the time to 30 minutes:
 
-![image]() 
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part4/nodes.PNG) 
 
 Now you will see some metrics regarding nodes, 
 hover over the metrics, to see what happened during the load test.
 
-10. Change the the dashboard to Pods on the top left corner and the time to 30 minutes:
+10. Change the the dashboard to Pods on the top left corner, 
+change the name space to Wordpress, and change the time to 30 minutes:
 
-![image]() 
+![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part4/pods.PNG) 
 
 Now you will see some metrics regarding pods, 
 hover over the metrics, to see what happened during the load test.
