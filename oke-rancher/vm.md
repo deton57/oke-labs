@@ -162,6 +162,7 @@ Here it is a bit tricky,
 but we will do it together.
 
 **If you are a Mac user, use this link: https://ocikb.com/ssh-keys-for-linux-cloud-instances ** 
+For windows users, you can continue with the following steps: 
 
 1. Open putty keygen
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/putty-keygen1.PNG)
