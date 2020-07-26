@@ -1,6 +1,6 @@
 ## Welcome to OKE - Rancher lab ##
 
-<img src="https://github.com/deton57/oke-labs/blob/master/oke-rancher/oracle-k8s-rancher-linnovate.png" width="800"/>
+<img src="https://github.com/deton57/oke-labs/blob/master/oke-rancher/oracle-k8s-rancher-linnovate.png" width="1024"/>
 
 Our goal is to get familiar with the following: 
 1. Oracle IaaS - OCI (Oracle Cloud Infrastructure)
