@@ -92,6 +92,9 @@ Select the same in the Rancher cluster configuration screen.
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part2/region.PNG)  
 
+**If you are a Mac user, use this link: https://ocikb.com/create-keys-in-pem-format ** 
+For windows users, you can continue with the following steps: 
+
 5. Now we move to Mobaxterm terminal. 
 We should create a Public/Private key for the API. 
 This is a different requirement from the one we did before.
