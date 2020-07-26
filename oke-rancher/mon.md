@@ -1,14 +1,14 @@
 ## Welcome to part 4 - Monitoring using Rancher ## 
 
 In this part, we are going to activate and monitor our cluster and services,
-using Rancher, we are going to monitor the:
+using Rancher, we are going to monitor:
 
 * The Cluster
 * The Deployment
 * The Nodes
 * The Pods
 
-We are going to load the Wordpress service, and scale out some pods from Rancher.
+We are going to load the Wordpress service, and scale out some Pods from Rancher.
 And we are goint to look into the built-in Grafana, that Rancher will deploy, in order
 to get clear picture of what exactly is happening, based on the: Network, CPU and Storage workloads. 
 
@@ -218,7 +218,7 @@ hover over the metrics, to see what happened during the load test.
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part4/nodes.PNG) 
 
-Now you will see some metrics regarding nodes, 
+Now you will see some metrics regarding Nodes, 
 hover over the metrics, to see what happened during the load test.
 
 10. Change the the dashboard to Pods on the top left corner, 
@@ -226,7 +226,7 @@ change the name space to Wordpress, and change the time to 30 minutes:
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part4/pods.PNG) 
 
-Now you will see some metrics regarding pods, 
+Now you will see some metrics regarding Pods, 
 hover over the metrics, to see what happened during the load test.
 
 
