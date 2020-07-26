@@ -58,7 +58,7 @@ you have deployed your first app on Rancher (in this lab, of course)
 
 ![image](https://github.com/deton57/oke-labs/blob/master/oke-rancher/screenshots/part3/ready-deployment.PNG)
 
-Let's play around and see some features that Rancher offer us. 
+Let’s give it a try and see some features that Rancher offer us. 
 First, let's click on the deployment on the word "wordpress". 
 
 In the next screen you will see endpoints you can access,
